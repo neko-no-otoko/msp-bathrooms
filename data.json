@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "name": "Minneapolis Central Library",
+    "type": "Public Library",
+    "address": "300 Nicollet Mall, Minneapolis, MN 55401",
+    "coordinates": [
+      44.9806,
+      -93.2704
+    ],
+    "access": "Public",
+    "accessible_restroom": true,
+    "hours": "Mon-Thu 9am-8pm, Fri-Sat 9am-5pm, Sun 12pm-5pm",
+    "notes": "Located on multiple floors. Very clean. Single-stall gender-inclusive restroom available (ask staff).",
+    "verified": true
+  },
+  {
+    "id": 2,
+    "name": "Target Field Station",
+    "type": "Transit Station",
+    "address": "335 N 5th St, Minneapolis, MN 55403",
+    "coordinates": [
+      44.9835,
+      -93.2762
+    ],
+    "access": "Public",
+    "accessible_restroom": true,
+    "hours": "Daily 6am-11pm",
+    "notes": "Near the platform entrance.",
+    "verified": true
+  },
+  {
+    "id": 3,
+    "name": "Midtown Global Market",
+    "type": "Market",
+    "address": "920 E Lake St, Minneapolis, MN 55407",
+    "coordinates": [
+      44.9483,
+      -93.2625
+    ],
+    "access": "Customers/Public",
+    "accessible_restroom": true,
+    "hours": "Daily 10am-8pm",
+    "notes": "Restrooms located in the central hallway.",
+    "verified": true
+  },
+  {
+    "id": 4,
+    "name": "Loring Park Community Arts Center",
+    "type": "Park Building",
+    "address": "1382 Willow St, Minneapolis, MN 55403",
+    "coordinates": [
+      44.9705,
+      -93.2835
+    ],
+    "access": "Public",
+    "accessible_restroom": true,
+    "hours": "Varies by season",
+    "notes": "Located inside the red building near the lake.",
+    "verified": false
+  },
+  {
+    "id": 5,
+    "name": "Peavey Plaza",
+    "type": "Public Plaza",
+    "address": "1101 Nicollet Mall, Minneapolis, MN 55403",
+    "coordinates": [
+      44.9726,
+      -93.2729
+    ],
+    "access": "Public",
+    "accessible_restroom": true,
+    "hours": "Daily 8am-9pm",
+    "notes": "Lower level, accessible by ramp. Three-season usage.",
+    "verified": true
+  },
+  {
+    "id": 6,
+    "name": "Hennepin County Government Center",
+    "type": "Government Building",
+    "address": "300 S 6th St, Minneapolis, MN 55487",
+    "coordinates": [
+      44.9765,
+      -93.2655
+    ],
+    "access": "Public (Security Check)",
+    "accessible_restroom": true,
+    "hours": "Mon-Fri 7:30am-5pm",
+    "notes": "Must pass through security. Restrooms on skyway level.",
+    "verified": true
+  },
+  {
+    "id": 7,
+    "name": "Minneapolis City Hall",
+    "type": "Government Building",
+    "address": "350 S 5th St, Minneapolis, MN 55415",
+    "coordinates": [
+      44.9769,
+      -93.2644
+    ],
+    "access": "Public (Security Check)",
+    "accessible_restroom": true,
+    "hours": "Mon-Fri 8am-4:30pm",
+    "notes": "Public restrooms available. Security check required.",
+    "verified": true
+  },
+  {
+    "id": 8,
+    "name": "Northeast Library",
+    "type": "Public Library",
+    "address": "2200 Central Ave NE, Minneapolis, MN 55418",
+    "coordinates": [
+      45.0069,
+      -93.2428
+    ],
+    "access": "Public",
+    "accessible_restroom": true,
+    "hours": "See library website for current hours",
+    "notes": "Public library restrooms.",
+    "verified": true
+  },
+  {
+    "id": 9,
+    "name": "East Lake Library",
+    "type": "Public Library",
+    "address": "2727 E Lake St, Minneapolis, MN 55406",
+    "coordinates": [
+      44.9484,
+      -93.2343
+    ],
+    "access": "Public",
+    "accessible_restroom": true,
+    "hours": "See library website for current hours",
+    "notes": "Public library restrooms.",
+    "verified": true
+  },
+  {
+    "id": 10,
+    "name": "Minnehaha Park (Pavilion)",
+    "type": "Park",
+    "address": "4801 S Minnehaha Drive, Minneapolis, MN 55417",
+    "coordinates": [
+      44.9157,
+      -93.2106
+    ],
+    "access": "Public",
+    "accessible_restroom": true,
+    "hours": "Seasonal / Park Hours",
+    "notes": "Restrooms available near the pavilion and Sea Salt Eatery. Often crowded.",
+    "verified": true
+  },
+  {
+    "id": 11,
+    "name": "Lake Harriet (Band Shell)",
+    "type": "Park",
+    "address": "4135 W Lake Harriet Parkway, Minneapolis, MN 55409",
+    "coordinates": [
+      44.9272,
+      -93.3073
+    ],
+    "access": "Public",
+    "accessible_restroom": true,
+    "hours": "Seasonal / Park Hours",
+    "notes": "Historic restroom buildings near the band shell. Seasonal availability.",
+    "verified": true
+  },
+  {
+    "id": 12,
+    "name": "Minneapolis Convention Center",
+    "type": "Convention Center",
+    "address": "1301 2nd Ave S, Minneapolis, MN 55403",
+    "coordinates": [
+      44.9691,
+      -93.2750
+    ],
+    "access": "Public",
+    "accessible_restroom": true,
+    "hours": "Event dependent / Daily 6am-10pm",
+    "notes": "Large facility with many restrooms. generally accessible during open hours.",
+    "verified": true
+  },
+  {
+    "id": 13,
+    "name": "Target (Nicollet Mall)",
+    "type": "Retail Store",
+    "address": "900 Nicollet Mall, Minneapolis, MN 55403",
+    "coordinates": [
+      44.9754,
+      -93.2736
+    ],
+    "access": "Public/Customers",
+    "accessible_restroom": true,
+    "hours": "Store Hours",
+    "notes": "Often cited as allowing public use.",
+    "verified": true
+  },
+  {
+    "id": 14,
+    "name": "Minneapolis Public Service Center",
+    "type": "Government Service Center",
+    "address": "250 S 4th St, Minneapolis, MN 55415",
+    "coordinates": [
+      44.9787,
+      -93.267
+    ],
+    "access": "Public (security screening may apply)",
+    "accessible_restroom": true,
+    "hours": "Mon-Fri 8am-4:30pm",
+    "notes": "Frequently recommended on local forums as a reliable downtown restroom option.",
+    "verified": true
+  },
+  {
+    "id": 15,
+    "name": "Nicollet Community Space",
+    "type": "Community Space",
+    "address": "651 Nicollet Mall, Minneapolis, MN 55402",
+    "coordinates": [
+      44.976,
+      -93.2731
+    ],
+    "access": "Public",
+    "accessible_restroom": true,
+    "hours": "Tue-Thu 12pm-5pm",
+    "notes": "DID-run space with restrooms, water, seating, and connections to services.",
+    "verified": true
+  },
+  {
+    "id": 16,
+    "name": "The Commons Park",
+    "type": "Public Park",
+    "address": "425 Portland Ave S, Minneapolis, MN 55415",
+    "coordinates": [
+      44.9731,
+      -93.2567
+    ],
+    "access": "Public",
+    "accessible_restroom": true,
+    "hours": "Park open daily; restroom access varies",
+    "notes": "Public restroom access may be restricted due to vandalism; porta potties may be caged/limited to staffed times.",
+    "verified": false
+  },
+  {
+    "id": 17,
+    "name": "Gold Medal Park",
+    "type": "Public Park",
+    "address": "2nd St & 11th Ave S, Minneapolis, MN 55415",
+    "coordinates": [
+      44.9806,
+      -93.256
+    ],
+    "access": "Public (seasonal)",
+    "accessible_restroom": true,
+    "hours": "Seasonal; hours vary",
+    "notes": "Park restroom availability varies; verify on-site signage.",
+    "verified": false
+  },
+  {
+    "id": 18,
+    "name": "Mill Ruins Park / Water Works",
+    "type": "Public Park",
+    "address": "102 Portland Ave S, Minneapolis, MN 55401",
+    "coordinates": [
+      44.9815,
+      -93.2552
+    ],
+    "access": "Public (seasonal)",
+    "accessible_restroom": true,
+    "hours": "Seasonal; hours vary",
+    "notes": "Park restroom access varies by season and event operations.",
+    "verified": false
+  },
+  {
+    "id": 19,
+    "name": "Minneapolis USPS Main Post Office",
+    "type": "Public Facility",
+    "address": "100 S 1st St, Minneapolis, MN 55401",
+    "coordinates": [
+      44.981,
+      -93.2708
+    ],
+    "access": "Public",
+    "accessible_restroom": true,
+    "hours": "Mon-Fri 9am-5pm (retail); lobby hours vary",
+    "notes": "Restroom access may depend on current lobby policy.",
+    "verified": false
+  },
+  {
+    "id": 20,
+    "name": "Ramp A",
+    "type": "Public Parking Ramp",
+    "address": "800 N 1st St, Minneapolis, MN 55403",
+    "coordinates": [
+      44.9833,
+      -93.2775
+    ],
+    "access": "Public",
+    "accessible_restroom": true,
+    "hours": "Varies",
+    "notes": "Confirm access and hours on-site.",
+    "verified": false
+  },
+  {
+    "id": 21,
+    "name": "Ramp B",
+    "type": "Public Parking Ramp",
+    "address": "805 N 2nd St, Minneapolis, MN 55402",
+    "coordinates": [
+      44.9832,
+      -93.276
+    ],
+    "access": "Public",
+    "accessible_restroom": true,
+    "hours": "Varies",
+    "notes": "Confirm access and hours on-site.",
+    "verified": false
+  },
+  {
+    "id": 22,
+    "name": "Ramp C",
+    "type": "Public Parking Ramp",
+    "address": "600 N 1st Ave, Minneapolis, MN 55403",
+    "coordinates": [
+      44.9819,
+      -93.2779
+    ],
+    "access": "Public",
+    "accessible_restroom": true,
+    "hours": "Varies",
+    "notes": "Confirm access and hours on-site.",
+    "verified": false
+  },
+  {
+    "id": 23,
+    "name": "IDS Center / Crystal Court",
+    "type": "Skyway Building",
+    "address": "80 S 8th St, Minneapolis, MN 55402",
+    "coordinates": [
+      44.9742,
+      -93.2728
+    ],
+    "access": "Private (public access)",
+    "accessible_restroom": true,
+    "hours": "Varies (business hours)",
+    "notes": "Verify current restroom access and security policies.",
+    "verified": false
+  },
+  {
+    "id": 24,
+    "name": "Peavey Plaza (Restroom Trailer)",
+    "type": "Seasonal Public Restroom",
+    "address": "1111 Nicollet Mall, Minneapolis, MN 55403",
+    "coordinates": [
+      44.9735,
+      -93.275
+    ],
+    "access": "Public (seasonal)",
+    "accessible_restroom": true,
+    "hours": "Seasonal; hours vary",
+    "notes": "Seasonal restroom trailer. May be closed in winter.",
+    "verified": false
+  }
+]
