@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             subdomains: 'abcd',
             maxZoom: 20
         }).addTo(map);
-        
+
         // Add zoom control to top-right
         L.control.zoom({
             position: 'topright'
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // "Locate Me" functionality
         document.getElementById('locate-me-btn').addEventListener('click', () => {
-            map.locate({setView: true, maxZoom: 16});
+            map.locate({ setView: true, maxZoom: 16 });
         });
 
         // Search functionality
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Clear existing markers
         markers.forEach(marker => map.removeLayer(marker));
         markers = [];
-        
+
         // Clear list
         const listContainer = document.getElementById('location-list');
         listContainer.innerHTML = '';
@@ -87,8 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Filter Locations
     function filterLocations(query) {
         const lowerQuery = query.toLowerCase();
-        const filtered = locations.filter(loc => 
-            loc.name.toLowerCase().includes(lowerQuery) || 
+        const filtered = locations.filter(loc =>
+            loc.name.toLowerCase().includes(lowerQuery) ||
             loc.address.toLowerCase().includes(lowerQuery) ||
             loc.type.toLowerCase().includes(lowerQuery)
         );
@@ -139,18 +139,52 @@ document.addEventListener('DOMContentLoaded', () => {
     closeSuggest.addEventListener('click', () => {
         suggestModal.classList.add('hidden');
     });
-    
+
     suggestModal.addEventListener('click', (e) => {
         if (e.target === suggestModal) {
             suggestModal.classList.add('hidden');
         }
     });
 
-    suggestForm.addEventListener('submit', (e) => {
+    suggestForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        alert('Thank you for your suggestion! We will review it shortly.');
-        suggestModal.classList.add('hidden');
-        suggestForm.reset();
+
+        const submitBtn = suggestForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
+
+        const formData = {
+            name: document.getElementById('suggest-name').value,
+            address: document.getElementById('suggest-address').value,
+            notes: document.getElementById('suggest-notes').value
+        };
+
+        try {
+            const response = await fetch('/api/submit-suggestion', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                alert('Thank you for your suggestion! We will review it shortly.');
+                suggestModal.classList.add('hidden');
+                suggestForm.reset();
+            } else {
+                throw new Error(result.error || 'Failed to submit suggestion');
+            }
+        } catch (error) {
+            console.error('Submission error:', error);
+            alert('Error: ' + error.message);
+        } finally {
+            submitBtn.innerHTML = originalBtnText;
+            submitBtn.disabled = false;
+        }
     });
 
     // Start App
